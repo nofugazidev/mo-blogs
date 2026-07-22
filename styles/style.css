@@ -36,10 +36,36 @@ aside .logout {
 }
 
 aside div p {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 main {
   flex: 95%;
   padding: 20px;
 }
+
+/*  modal styles */
+.new-post-modal, .profile-modal, .logout-modal {
+  position: fixed;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(75, 86, 148, 0.5);
+  backdrop-filter: blur(4);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 999;
+  display: none;
+}
+
+.new-post-modal.show, .profile-modal.show, .logout-modal.show {
+  display: flex;
+}
+
+.new-post-modal .post-content, .profile-modal .modal-content, .logout-modal .logout-content {
+  width: 30vw;
+  height: 80vh;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+

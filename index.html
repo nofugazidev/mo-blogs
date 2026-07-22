@@ -10,7 +10,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script defer src="/scripts/script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -20,21 +21,55 @@
           <i class="fa-solid fa-house"></i>
           <p>home</p>
         </div>
-        <div class="write">
-            <i class="fa-solid fa-file-pen"></i>
-            <p>new +</p>
+        <div class="write" id="write">
+          <i class="fa-solid fa-file-pen"></i>
+          <p>new +</p>
         </div>
-        <div class="profile">
-            <i class="fa-solid fa-user"></i>
-            <p>profile</p>
+        <div class="profile" id="profile">
+          <i class="fa-solid fa-user"></i>
+          <p>profile</p>
         </div>
       </div>
 
-      <div class="logout">
+      <div class="logout" id="logout">
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
         <p>logout</p>
       </div>
     </aside>
     <main class="content"></main>
+
+
+     <div id="new-post-modal" class="new-post-modal">
+      <div id="post-content" class="post-content">
+        <h1>this is the new post modal</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+          explicabo! Itaque laboriosam corporis vero architecto molestiae
+          voluptate voluptatibus, sit dignissimos.
+        </p>
+      </div>
+    </div>
+
+    <div id="profile-modal" class="profile-modal">
+      <div id="modal-content" class="modal-content">
+        <h1>this is the profile modal</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+          explicabo! Itaque laboriosam corporis vero architecto molestiae
+          voluptate voluptatibus, sit dignissimos.
+        </p>
+      </div>
+    </div>
+
+     <div id="logout-modal" class="logout-modal">
+      <div id="logout-content" class="logout-content">
+        <h1>this is the logout modal</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+          explicabo! Itaque laboriosam corporis vero architecto molestiae
+          voluptate voluptatibus, sit dignissimos.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
