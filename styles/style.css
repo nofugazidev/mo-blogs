@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+aside {
+  flex: 5%;
+  background: #4b5694;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ebf4dd;
+}
+
+aside .main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+aside .main-menu div,
+aside .logout {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+aside div p {
+    text-transform: capitalize;
+}
+
+main {
+  flex: 95%;
+  padding: 20px;
+}
